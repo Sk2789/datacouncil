@@ -1,0 +1,68 @@
+<div class="modal fade" id="ApplyNow" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content rounded shadow border-0">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Apply now </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <form  method="post" name="myForm" id="modalForm">
+                    <p id="error-msg" class="mb-0"></p>
+                    <div id="simple-msg"></div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Your Name :<span class="text-danger">*</span></label>
+                                <div class="form-icon position-relative">
+                                    <i data-feather="user" class="fea icon-sm icons"></i>
+                                    <input name="name" id="name" type="text" class="form-control ps-5"  placeholder="First Name :">
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Your Email :<span class="text-danger">*</span></label>
+                                <div class="form-icon position-relative">
+                                    <i data-feather="mail" class="fea icon-sm icons"></i>
+                                    <input name="email" id="email" type="email" class="form-control ps-5"  placeholder="Your email :">
+                                </div>
+                            </div> 
+                        </div><!--end col-->
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Your Phone no. :<span class="text-danger">*</span></label>
+                                <div class="form-icon position-relative">
+                                    <i data-feather="phone" class="fea icon-sm icons"></i>
+                                    <input name="number" id="number" type="number" class="form-control ps-5"  placeholder="Your phone no. :">
+                                </div>
+                            </div> 
+                        </div><!--end col-->
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Course Title :</label>
+                                <div class="form-icon position-relative">
+                                    <i data-feather="book" class="fea icon-sm icons"></i>
+                                    <input name="course" id="course" class="form-control ps-5"  placeholder="Title :" disabled>
+                                </div>
+                            </div>                                                                               
+                        </div><!--end col-->
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label class="form-label">Any Comments :</label>
+                                <div class="form-icon position-relative">
+                                    <i data-feather="message-circle" class="fea icon-sm icons"></i>
+                                    <textarea name="comments" id="comments" rows="4" class="form-control ps-5"  placeholder="Comments :"></textarea>
+                                </div>
+                            </div>
+                        </div><!--end col-->                                    
+                    </div><!--end row-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary" value="Apply Now">
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </form><!--end form--> 
+            </div>
+        </div>
+    </div>
+</div>

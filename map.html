@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAP</title>
+    <style>
+
+*{
+    box-sizing: border-box;
+}
+
+        .container{
+            width:90vw;
+            height:90vh;
+            position: relative;
+            background-color: beige;
+        }
+
+        .map{
+            width:100%;
+            height:100%;
+            background-color:brown;
+        }
+
+        .cards{
+            position:absolute;
+            top:0;
+            left:0;
+            bottom:0;
+            width:380px;
+            background-color: cadetblue;
+            overflow-y: scroll;
+        }
+
+        .card{
+            width:100%;
+            min-height:300px;
+            background-color: white;
+            border: 1px solid black;
+            margin-bottom:10px;
+            padding:15px;
+        }
+
+        .infoDiv{
+            display: flex;
+            
+        }
+
+        .infoDiv img{
+            width:120px;
+            height:120px;
+            padding:10px 10px 15px 10px;
+        }
+
+        .infoDiv h4{
+            margin:10px 0 10px 0;
+        }
+
+
+        .infoDiv p{
+            margin:5px 0;
+        }
+
+        .card .patientExperince{
+            width:150px;
+        }
+
+        .todatyDate{
+            margin:0 0 5px 0;
+        }
+
+        .timeButton{
+            background-color: white;
+            border:1px solid deepskyblue;
+            outline: none;
+            padding:5px 10px;
+            border-radius: 5px;
+        }
+
+        .buttonActive{
+            background-color: deepskyblue;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="map">
+
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="infoDiv">
+                    <img src="profile.png" alt="">
+                    <div class="info">
+                        <h4 class="docName">Dr. NAME NAME NAME</h4>
+                        <p class="specialist">Family Medicine</p>
+                        <p class="hospitalName">P.T.Ghorpade</p>
+                        <p class="hospitalAddress">
+                            1839 Sycamore Street,Santa Clara, California,95054
+                        </p>
+                        <p class="contactNo">408-855-9265</p>
+                    </div>
+                </div>
+                <p class="patientExperince">
+                    No Patient Expererince Rating
+                </p>
+                <h4 class="todatyDate">Monday, Jun 25</h4>
+                <div class="timeDiv">
+                    <button class="timeButton buttonActive">9:30 AM</button>
+                    <button class="timeButton">4:00 PM</button>
+                </div>
+                <p class="next3MonthSchedule">
+                    View Schedule for Next 3 Months
+                </p>
+                <p class="moreLocation">
+                    More Location
+                </p>
+            </div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+    </div>
+
+</body>
+</html>
